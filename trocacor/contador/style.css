@@ -1,0 +1,43 @@
+body{
+    text-align: center;
+    margin-top: 30vh;
+}
+
+div{
+    margin-top: 10vh;
+    font-size: 40pt;
+
+    color: brown;
+}
+
+
+section{
+    margin-top: 20vh
+}
+
+.button{
+    padding: 1em;
+    margin: 1em;
+    
+    width: 20em;
+
+    border-radius: 1em;
+    background: none;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.button:focus{
+    border-color: blue;
+}
+
+.button:hover{
+    transition: .5s;
+    border-color: rgba(255, 0, 98, 0.521);
+}
+
+
+
+

@@ -1,0 +1,30 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title{
+    color: rgba(32, 135, 204, 0.664);
+}
+
+.title strong{
+    color: black;
+}
+
+.container-nav ul{
+    display: inline-flex;
+    
+}
+
+.container-nav ul li{
+    list-style: none;
+
+    margin: 2em;
+}
+
+.container-nav ul li a{
+    text-decoration: none;
+}
+
+
