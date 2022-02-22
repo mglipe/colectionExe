@@ -1,10 +1,26 @@
+const navBar = document.querySelector('.reorder')
+const menu = document.querySelector('.list')
+navBar.addEventListener('click', (event)=>{
+    console.log(event.currentTarget.classList)
+    const invisible = event.currentTarget.classList.contains('invisible')
+    if(!invisible){
+        menu.classList.toggle('invisible')
+    }
+})
+
+
+
+
+
+
+/*const navBar = document.querySelector('.list')
+const reoder = document.querySelector('.reorder')
 
 function myFunction(boolean) {
-    const navBar = document.querySelector('.container-nav')
-    const reoder = document.querySelector('.reoder')
+    
     console.log(reoder)
     if (boolean.matches) {
-        navBar.classList.add('invisible')
+        navBar.classList.toggle('invisible')
         reoder.classList.remove('invisible')
     }else{
         navBar.classList.remove('invisible')
@@ -23,3 +39,10 @@ function myFunction(boolean) {
   resolution.addListener(myFunction);
 
 
+reoder.addEventListener('click', (event)=>{
+    navBar.style.display = "block"
+    navBar.classList.toggle('invisible')
+    console.log(event)
+})
+
+*/
