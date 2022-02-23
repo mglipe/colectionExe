@@ -53,3 +53,38 @@
 
 }
 
+
+@media (min-width: 801px) and (max-width: 2000px){
+
+        body{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .title{
+            color: rgba(32, 135, 204, 0.664);
+            margin: 1em;
+        }
+
+        .material-icons{
+            display: none;
+        }
+
+        .list{
+            display: inline-flex;
+            margin: 3.3em;
+        }
+
+        .list li{
+            margin-right: 1em;
+            list-style: none;
+        }
+
+        .list li a{
+            text-decoration: none;
+        }
+
+
+}
+

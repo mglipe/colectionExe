@@ -1,48 +1,31 @@
 const navBar = document.querySelector('.reorder')
 const menu = document.querySelector('.list')
-navBar.addEventListener('click', (event)=>{
-    console.log(event.currentTarget.classList)
-    const invisible = event.currentTarget.classList.contains('invisible')
+navBar.addEventListener('click', ()=>{
+    console.log(menu.classList)
+    const invisible = menu.classList.contains('invisible')
     if(!invisible){
-        menu.classList.toggle('invisible')
+        menu.classList.add('invisible')
+    }else{
+        menu.classList.remove('invisible')
     }
 })
 
-
-
-
-
-
-/*const navBar = document.querySelector('.list')
-const reoder = document.querySelector('.reorder')
-
-function myFunction(boolean) {
-    
-    console.log(reoder)
-    if (boolean.matches) {
-        navBar.classList.toggle('invisible')
-        reoder.classList.remove('invisible')
+function resolucao(resolution) {
+    if (resolution.matches) {
+        menu.classList.remove('invisible')
     }else{
-        navBar.classList.remove('invisible')
-        reoder.classList.add('invisible')
+        menu.classList.add('invisible')
     }
   }
   
   // // Create a MediaQueryList object
-  const resolution = window.matchMedia("(max-width: 900px)")
-  console.log(resolution)
+  const resolution = window.matchMedia("(min-width: 801px)")
   
   // Call the match function at run time:
-  myFunction(resolution);
+  resolucao(resolution);
   
   // Add the match function as a listener for state changes:
-  resolution.addListener(myFunction);
+  resolution.addListener(resolucao);
 
 
-reoder.addEventListener('click', (event)=>{
-    navBar.style.display = "block"
-    navBar.classList.toggle('invisible')
-    console.log(event)
-})
 
-*/
